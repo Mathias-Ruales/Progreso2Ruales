@@ -4,46 +4,108 @@
              x:Class="Progreso2Ruales.Info"
              Title="Info">
 
-    <Grid RowSpacing="0" ColumnSpacing="0">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-        <Grid Grid.Row="0" Grid.Column="0" BackgroundColor="Pink">
-            <Label Text="Nombre: Mathias Ruales"
-                   FontSize="24"
-                   TextColor="Black"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   HorizontalTextAlignment="Center" />
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Grid RowSpacing="10" ColumnSpacing="10"
+              WidthRequest="300" HeightRequest="300">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Row="0" Grid.Column="0"
+                    Stroke="Black"
+                    StrokeThickness="2"
+                    BackgroundColor="Pink"
+                    StrokeShape="RoundRectangle 10"
+                    Padding="10">
+                <VerticalStackLayout HorizontalOptions="Center" 
+                                     VerticalOptions="Center">
+                    <Label Text="Nombre:" 
+                           TextColor="Black"                           
+                           FontAttributes="Bold" 
+                           FontSize="18"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                    <Label Text="Mathias Ruales" 
+                           TextColor="Black"                           
+                           FontSize="16" 
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Grid.Row="0" Grid.Column="1"
+                    Stroke="Black"
+                    StrokeThickness="2"
+                    BackgroundColor="Yellow"
+                    StrokeShape="RoundRectangle 10"
+                    Padding="10">
+                <VerticalStackLayout HorizontalOptions="Center" 
+                                     VerticalOptions="Center">
+                    <Label Text="Fecha:" 
+                           TextColor="Black"
+                           FontAttributes="Bold" 
+                           FontSize="18" 
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+         
+                    <Label Text="06/05/2025" 
+                           TextColor="Black"
+                           FontSize="16" 
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Grid.Row="1" Grid.Column="0"
+                    Stroke="Black"
+                    StrokeThickness="2"
+                    BackgroundColor="Yellow"
+                    StrokeShape="RoundRectangle 10"
+                    Padding="10">
+                <VerticalStackLayout HorizontalOptions="Center" 
+                                     VerticalOptions="Center">
+                    <Label Text="Intereses:" 
+                           TextColor="Black"                           
+                           FontAttributes="Bold" 
+                           FontSize="18"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                    <Label Text="Star Wars, Spider-Man, Daredevil" 
+                           TextColor="Black"                           
+                           FontSize="16" 
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Grid.Row="1" Grid.Column="1"
+                    Stroke="Black"
+                    StrokeThickness="2"
+                    BackgroundColor="Pink"
+                    StrokeShape="RoundRectangle 10"
+                    Padding="10">
+                <VerticalStackLayout HorizontalOptions="Center" 
+                                     VerticalOptions="Center">
+                    <Label Text="Versión:" 
+                           TextColor="Black"                           
+                           FontAttributes="Bold" 
+                           FontSize="18"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                    <Label Text="1.0" 
+                           TextColor="Black"                           
+                           FontSize="16" 
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </VerticalStackLayout>
+            </Border>
+
         </Grid>
-        <Grid Grid.Row="0" Grid.Column="1" BackgroundColor="Yellow">
-            <Label Text="Fecha: 06/05/2025"
-                   FontSize="24"
-                   TextColor="Black"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   HorizontalTextAlignment="Center" />
-        </Grid>
-        <Grid Grid.Row="1" Grid.Column="0" BackgroundColor="Yellow">
-            <Label Text="Intereses: Star Wars, Spider-Man, Daredevil"
-                   FontSize="24"
-                   TextColor="Black"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   HorizontalTextAlignment="Center" />
-        </Grid>
-        <Grid Grid.Row="1" Grid.Column="1" BackgroundColor="Pink">
-            <Label Text="Versión: 1.0"
-                   FontSize="24"
-                   TextColor="Black"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   HorizontalTextAlignment="Center" />
-        </Grid>
-    </Grid>
+    </StackLayout>
 </ContentPage>
