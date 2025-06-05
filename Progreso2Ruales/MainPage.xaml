@@ -11,8 +11,8 @@
             VerticalOptions="Center" />
         <Image
             Source="https://static.wikia.nocookie.net/nintendo/images/d/d2/Super_Mushroom_Spirit_SSBU.png/revision/latest?cb=20201018031322&amp;path-prefix=en"
-            WidthRequest="100"
-            HeightRequest="100"
+            WidthRequest="150"
+            HeightRequest="150"
             HorizontalOptions="Center"
             VerticalOptions="Center" />
         <Button
