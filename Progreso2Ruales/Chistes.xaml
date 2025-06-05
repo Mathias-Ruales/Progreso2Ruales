@@ -3,10 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Progreso2Ruales.Chistes"
              Title="Chistes">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <AbsoluteLayout>
+        <Label x:Name="ChisteText"
+               Text="Presiona el botón para un chiste"
+               FontSize="18"
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.5, 0.3, 0.8, AutoSize"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional" />
+
+        <Button Text="Obtener Chiste"
+                Clicked="OnGetJokeClicked"
+                AbsoluteLayout.LayoutBounds="0.5, 0.6, 200, 50"
+                AbsoluteLayout.LayoutFlags="PositionProportional" />
+    </AbsoluteLayout>
 </ContentPage>

@@ -3,47 +3,47 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Progreso2Ruales.Info"
              Title="Info">
-    <Grid>
+
+    <Grid RowSpacing="0" ColumnSpacing="0">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
-            <ColumnDefinition />
+            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <BoxView Color="Pink"
-                 WidthRequest="400"/>
-        <BoxView Grid.Column="1"
-                 Color="Yellow" 
-                 WidthRequest="400"/>
-        <BoxView Grid.Row="1"
-                 Color="Yellow"
-                 WidthRequest="400"/>
-        <BoxView Grid.Column="1"
-                 Grid.Row="1"
-                 Color="Pink"
-                 WidthRequest="400"/>
-        
-        <Label Text="Nombre: Mathias Ruales"
-           FontSize="30"
-           TextColor="Black"
-           WidthRequest="200" />
-        <Label Grid.Column="1"
-           Text="Fecha 06/05/2025" 
-           FontSize="30"
-           TextColor="Black"
-           WidthRequest="200"/>
-        <Label Grid.Row="1"
-           Text="Intereses: Star Wars, Spider-Man, Daredevil"
-           FontSize="30"
-           TextColor="Black"
-           WidthRequest="200"/>
-        <Label Grid.Column="1"
-           Grid.Row="1"
-           Text="Version: 1.0"
-           FontSize="30"
-           TextColor="Black"
-           WidthRequest="200"/>
+        <Grid Grid.Row="0" Grid.Column="0" BackgroundColor="Pink">
+            <Label Text="Nombre: Mathias Ruales"
+                   FontSize="24"
+                   TextColor="Black"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   HorizontalTextAlignment="Center" />
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="1" BackgroundColor="Yellow">
+            <Label Text="Fecha: 06/05/2025"
+                   FontSize="24"
+                   TextColor="Black"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   HorizontalTextAlignment="Center" />
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="0" BackgroundColor="Yellow">
+            <Label Text="Intereses: Star Wars, Spider-Man, Daredevil"
+                   FontSize="24"
+                   TextColor="Black"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   HorizontalTextAlignment="Center" />
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1" BackgroundColor="Pink">
+            <Label Text="Versión: 1.0"
+                   FontSize="24"
+                   TextColor="Black"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   HorizontalTextAlignment="Center" />
+        </Grid>
     </Grid>
 </ContentPage>
