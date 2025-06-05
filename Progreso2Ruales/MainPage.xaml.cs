@@ -12,14 +12,17 @@
 
         private void OnCounterClicked(object sender, EventArgs e)
         {
-            count++;
+           
+        }
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+        private void Chistes_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Chistes());
+        }
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+        private void Info_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Info());   
         }
     }
 
