@@ -3,9 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Progreso2Ruales.MainPage">
 
-    <StackLayout>
+    <StackLayout
+        Spacing="20"
+        Padding="20"
+        VerticalOptions="Center"
+        HorizontalOptions="Center">
         <Label
             Text="Bienvenido a la aplicacion de Mathias Ruales"
+            FontAttributes="Bold"
             FontSize="32"
             HorizontalOptions="Center"
             VerticalOptions="Center" />
